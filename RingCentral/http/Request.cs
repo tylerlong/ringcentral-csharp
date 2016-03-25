@@ -85,11 +85,19 @@ namespace RingCentral.Http
         /// <returns>A URL with Query String appended if query values are present</returns>
         public string GetUrl()
         {
+            if (!_url.Contains("restapi/"))
+            {
+                return "/restapi/v1.0" + _url + GetQuerystring();
+            }
             return _url + GetQuerystring();
         }
 
         public Uri GetUri()
         {
+            if (!_url.Contains("restapi/"))
+            {
+                return new Uri("/restapi/v1.0" + _url + GetQuerystring(), UriKind.Relative);
+            }
             return new Uri(_url + GetQuerystring(), UriKind.Relative);
         }
 
