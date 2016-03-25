@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using RingCentral.SDK.Http;
 using System.Diagnostics;
 
-namespace RingCentral.SDK
+namespace RingCentral
 {
     public class Platform
     {

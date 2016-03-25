@@ -6,7 +6,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using RingCentral.SDK.Helper;
 
-namespace RingCentral.SDK.Http
+namespace RingCentral.Http
 {
     public class Request : Headers
     {
