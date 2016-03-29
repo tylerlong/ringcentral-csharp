@@ -1,13 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using PubNubMessaging.Core;
+using RingCentral.Http;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Security.Cryptography;
 using System.Text;
-using Newtonsoft.Json;
-using PubNubMessaging.Core;
-using Newtonsoft.Json.Linq;
-using RingCentral.SDK;
-using RingCentral.SDK.Http;
 using System.Timers;
 
 namespace RingCentral.Subscription
