@@ -18,15 +18,15 @@
         /// <param name="appKey">RingCentral Application Key</param>
         /// <param name="appSecret">RingCentral Application Secret</param>
         /// <param name="server">RingCentral Server</param>
-        public SDK(string server, string appKey, string appSecret, string appName = "", string appVersion = "")
+        public SDK(string appKey, string appSecret, string server, string appName = "", string appVersion = "")
         {
-            Server = server;
             AppKey = appKey;
             AppSecret = appSecret;
+            Server = server;
             AppName = appName;
             AppVersion = appVersion;
 
-            Platform = new Platform(server, appKey, appSecret, appName, appVersion);
+            Platform = new Platform(appKey, appSecret, server, appName, appVersion);
         }
 
         public Platform GetPlatform()

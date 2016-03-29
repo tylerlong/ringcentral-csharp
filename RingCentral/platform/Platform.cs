@@ -32,11 +32,11 @@ namespace RingCentral
         //    _client = new HttpClient { BaseAddress = new Uri(ApiEndpoint) };
         //}
 
-        public Platform(string server, string appKey, string appSecret, string appName, string appVersion)
+        public Platform(string appKey, string appSecret, string server, string appName, string appVersion)
         {
-            Server = server;
             AppKey = appKey;
             AppSecret = appSecret;
+            Server = server;
             Auth = new Auth();
             _client = new HttpClient {BaseAddress = new Uri(Server)};
             SetUserAgentHeader(appName, appVersion);
