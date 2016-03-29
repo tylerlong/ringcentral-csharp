@@ -64,10 +64,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="PubnubMessaging">
-      <HintPath>J:\IoS\PubnubMessaging.dll</HintPath>
-    </Reference>
-    <Reference Include="RingCentral">
-      <HintPath>..\RingCentral\bin\Release\RingCentral.dll</HintPath>
+      <HintPath>..\..\pubnub\monotouch\PubnubMessaging\bin\Debug\PubnubMessaging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Net.Http" />
@@ -94,6 +91,12 @@
     <ImageAsset Include="Resources/SubscriptionServiceImplementation.xcassets/LaunchImages.launchimage/Contents.json">
       <InProject>false</InProject>
     </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RingCentral\RingCentral.csproj">
+      <Project>{67cbcaaf-36e8-424b-8d49-28f43ae7793f}</Project>
+      <Name>RingCentral</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
