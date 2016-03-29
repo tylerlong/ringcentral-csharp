@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Net.Http;
 using NUnit.Framework;
-using RingCentral.SDK.Http;
-using RingCentral.SDK;
+using RingCentral.Http;
+using RingCentral;
 
 namespace RingCentral.Test
 {
@@ -28,7 +28,7 @@ namespace RingCentral.Test
 
         protected Platform Platform;
 
-        protected RingCentral.SDK.SDK RingCentralClient;
+        protected RingCentral.SDK RingCentralClient;
         protected MockHttpClient MockResponseHandler = new MockHttpClient();
 
         [TestFixtureSetUp]
